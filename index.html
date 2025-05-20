@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Game</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <style>
+            a:link, a:visited {
+                background-color: #0c4818;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            </style>
+</head>
+<body>
+    <h1>Quiz Game</h1>
+    
+    <form>
+        <form class="form-grid-browser">
+            <div class="form-grid-browser-card">
+                <fieldset>
+                    <legend>Load game from:</legend>
+                    <div class="contents form-small-button" >
+                        <button class="contents form-small-button" id="fileGame" onclick="gotoPage()">File</button>
+                        <button class="contents form-small-button" id="loadSheet" onclick="showSheetForm()">Google Sheets</button>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </form>
+
+    <div id="linkDiv" hidden>
+        <div  id="linkClass" class="form-grid-browser-card" >
+            <form id="sheetsConfig">
+                <label for="sheetsID">Enter a Google Sheets ID</label>
+                <input type="text" id="sheetsID" onchange="updateLink()"></input>    
+                <a href="" target="_self" id="sheetsButton">Start Game</a>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        
+        window.addEventListener('load', (event) =>{
+            
+            const sheetsLink = window.localStorage.getItem('sheetsLink') 
+            console.log(sheetsLink)
+            console.log(sheetsLink === null)
+            
+            if(sheetsLink !== null){
+                console.log(localStorage.getItem('sheetsID'))
+                const linkButton = document.getElementById("sheetsButton")
+                linkButton.hidden=false;
+                linkButton.href = `QuizImportSheets.html?id=${localStorage.getItem('sheetsID')}`
+                linkButton.innerText = `Start Game`    
+            }
+        })
+        
+        function gotoPage(){
+            event.preventDefault()
+            window.location.href =  "QuizImportFile.html";    
+        }
+        
+        function showSheetForm(){
+            event.preventDefault()
+            document.getElementById("sheetsID").value = localStorage.getItem('sheetsID');
+            document.getElementById("linkDiv").hidden = false;
+            // document.getElementById("linkClass").hidden = false;
+        }
+        
+        function updateLink(){
+            console.log(event)
+            const linkButton = document.getElementById("sheetsButton")
+            linkButton.hidden=false;
+            linkButton.href = `QuizImportSheets.html?id=${event.target.value}`
+            linkButton.innerText = `Start Game`
+            window.localStorage.setItem('sheetsLink', linkButton.href);
+            window.localStorage.setItem('sheetsID', event.target.value);
+        }
+    </script>
+</body>
+</html>
