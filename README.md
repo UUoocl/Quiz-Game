@@ -1,5 +1,15 @@
 # Reveal-Quiz-Game
-A quiz game made in [Reveal.js](https://revealjs.com/)
+A quiz game intended to played in-person.  
+
+### features
+- Clues stored in Google Sheets
+  - clues can be downloaded for offline play 
+- Google Forms for creating clues and answers 
+- supports 12 players.   
+- made with [Reveal.js](https://revealjs.com/)
+
+
+![Audience and Host Views of the game board.](/readme/AudienceHostScreens.excalidraw.png)
 
 ![Quiz Game Diagram.](/readme/tools.excalidraw.png)
 
