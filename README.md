@@ -5,31 +5,78 @@ A quiz game intended to played in-person.
 - Clues stored in Google Sheets
   - clues can be downloaded for offline play 
 - Google Forms for creating clues and answers 
-- supports 12 players.   
-- made with [Reveal.js](https://revealjs.com/)
+- Clues can include Text, Video, Audio and Images 
+- Supports 12 players.   
+
+Made with [Reveal.js](https://revealjs.com/)
 
 
 ![Audience and Host Views of the game board.](/readme/AudienceHostScreens.excalidraw.png)
 
 ![Quiz Game Diagram.](/readme/tools.excalidraw.png)
 
-## 
-1. Download this repository.
+## Getting Started
+
+1. A Google Account is required to copy the Google Sheets and Google Forms. 
+
+Copy this Google Sheet to your Google Drive.  
+
+> [Quiz Game - Google Sheet](https://docs.google.com/spreadsheets/d/15268vmqaTuGxiRqAtylkLjOmS8P5J1QZaTJ_vIyf1Ns/copy)
+
+> [Tip]
+> Move the copied files to a folder in your Google Drive
+
+2. Publish the Google Forms that comes with the "Quiz Game" Google Sheet
+Google forms are used to add new clues and categories. 
+There are 2 versions of the input form.  One Form creates clues that can include Text, Images, Audio or Video. The other Form creates Text only clues. 
+
+![Google Drive Folder with Quiz Game Sheet and Forms.](/readme/QuizGameDrive.excalidraw.png)
+Open the Forms and click the "Publish" Button
+
+Share the Form link with others to add Clues and Categories. 
    
-2. Create quiz boards using a Google Sheet Template
+3. Choose the Categories for the Game.
 
-https://docs.google.com/spreadsheets/d/15268vmqaTuGxiRqAtylkLjOmS8P5J1QZaTJ_vIyf1Ns/copy
+In the "Quiz Game" Sheets use the "Selected Categories" tab to choose categories    
+![alt text](/readme/image.png)
 
-3. Create questions and answers using the Google Form that comes with the 
-"Quiz-Game-Maker" Google Sheet
+4. Share the "Quiz Game" Sheets
 
-5. Download the JSON code from the Google Sheet named "Download".
+Click the "Share" button, then set the the "General Access" to "Anyone with the link"
 
-6. Save the .tsv file in the main project folder.
+5. Copy the Quiz Game Sheets ID
 
-7. Open the quiz-game.html file
-   
-## Google Drive notes
+In your browsers address bar copy the Sheet ID.  
+- the Sheets ID is between the */d/* and */edit*  
+![alt text](image.png)
+
+6. Start the Quiz Game
+
+The Quiz Game is hosted on Github.  
+
+   > [Start Quiz Game Github page ](https://uuoocl.github.io/Quiz-Game/)
+
+To load your Quiz game, 
+- click the "Google Sheets" button.  
+- Paste your Sheets ID.
+- click "Start Game"
+
+
+![Quiz Game Start Page](/readme/QuizGameIndex.excalidraw.png)
+
+
+
+## Offline Play
+
+> [!TIP]
+> Optionally the clues can be downloaded for offline game play.
+
+1. 
+2. Open the Quiz Game Sheet's "Games-Download" tab 
+3. In the file menu, choose File -> Download -> Tab Seperated Values
+4. Save the .tsv file in the main project folder.
+5. Open the quiz-game.html file
+- Google Drive notes
 Photos, Videos and Audio submitted in the Google Form will be stored in your Google Drive.  Download these files to the "media" folder. 
 
 ## Controllers
