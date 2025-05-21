@@ -1,11 +1,14 @@
 # Reveal-Quiz-Game
 A quiz game made in [Reveal.js](https://revealjs.com/)
 
+![Quiz Game Diagram.](/readme/tools.excalidraw.png)
+
+## 
 1. Download this repository.
    
 2. Create quiz boards using a Google Sheet Template
 
-https://docs.google.com/spreadsheets/d/1rBwQ4n86ewNdmrxexafftWoIFiuI2x9Ddgy7FHIiFfI/copy
+https://docs.google.com/spreadsheets/d/15268vmqaTuGxiRqAtylkLjOmS8P5J1QZaTJ_vIyf1Ns/copy
 
 3. Create questions and answers using the Google Form that comes with the 
 "Quiz-Game-Maker" Google Sheet
@@ -16,9 +19,6 @@ https://docs.google.com/spreadsheets/d/1rBwQ4n86ewNdmrxexafftWoIFiuI2x9Ddgy7FHIi
 
 7. Open the quiz-game.html file
    
-## Google Sheets notes
-Before downloading a game file there is an important update to make. In the sheet named "Response", click on any URL to convert it to a "Chip". This will change the cell so that the file name will be displayed. 
-
 ## Google Drive notes
 Photos, Videos and Audio submitted in the Google Form will be stored in your Google Drive.  Download these files to the "media" folder. 
 
