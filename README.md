@@ -23,7 +23,7 @@ Copy this Google Sheet to your Google Drive.
 
 > [Quiz Game - Google Sheet](https://docs.google.com/spreadsheets/d/15268vmqaTuGxiRqAtylkLjOmS8P5J1QZaTJ_vIyf1Ns/copy)
 
-> [Tip]
+> [!Tip]
 > Move the copied files to a folder in your Google Drive
 
 2. Publish the Google Forms that comes with the "Quiz Game" Google Sheet
@@ -35,22 +35,23 @@ Open the Forms and click the "Publish" Button
 
 Share the Form link with others to add Clues and Categories. 
    
-3. Choose the Categories for the Game.
+1. Choose the Categories for the Game.
 
 In the "Quiz Game" Sheets use the "Selected Categories" tab to choose categories    
-![alt text](/readme/image.png)
+![image showing the select category screen](/readme/selectCategoriesImage.png)
 
-4. Share the "Quiz Game" Sheets
+1. Share the "Quiz Game" Sheets
 
 Click the "Share" button, then set the the "General Access" to "Anyone with the link"
 
-5. Copy the Quiz Game Sheets ID
+1. Copy the Quiz Game Sheets ID
 
 In your browsers address bar copy the Sheet ID.  
 - the Sheets ID is between the */d/* and */edit*  
-![alt text](image.png)
+![an image of the google sheet url](/readme/sheetID.png)
 
-6. Start the Quiz Game
+## Playing the Game
+1. Start the Quiz Game
 
 The Quiz Game is hosted on Github.  
 
@@ -61,32 +62,38 @@ To load your Quiz game,
 - Paste your Sheets ID.
 - click "Start Game"
 
+Use the "s" key to view the host notes. The host notes are provided to give the host instrucitons for each screen.  
 
 ![Quiz Game Start Page](/readme/QuizGameIndex.excalidraw.png)
-
-
 
 ## Offline Play
 
 > [!TIP]
 > Optionally the clues can be downloaded for offline game play.
 
-1. 
-2. Open the Quiz Game Sheet's "Games-Download" tab 
-3. In the file menu, choose File -> Download -> Tab Seperated Values
-4. Save the .tsv file in the main project folder.
-5. Open the quiz-game.html file
-- Google Drive notes
-Photos, Videos and Audio submitted in the Google Form will be stored in your Google Drive.  Download these files to the "media" folder. 
+1. Download the game clues
+   1. Open the Quiz Game Sheet's "Games-Download" tab 
+   2. In the file menu, choose File -> Download -> Tab Seperated Values
+   3. Save the .tsv file in the main project folder.
+2. Download the clue media (Video, Audio, Images)
+   1. Open google Drive
+   2. Navigate to the "Quiz_Game-Media-Form" folder
+        - move any files in the sub folders to the folder root. 
+3. Download this Github repository  
+   - Open the index.html file
+   - Store Photos, Videos and Audio the "media" folder. 
 
-## Controllers
+# Controllers
 
-Norwii brand wireless presentation remotes are used to play the game.  These remotes come with a customization software where each button can be set to a certain key.  
+Presentation Controllers can be used to play the game. 
 
-The "Host" is controller is a Norwii [N28](https://www.amazon.com/dp/B081SY17DC) or [N29](https://www.amazon.com/dp/B07HH4PFNQ).
+Norwii brand wireless presentation remotes are recommended to play the game.  These remotes come with a customization software where each button can be set to a certain key.  
+
+The recommended "Host" controller is a Norwii [N28](https://www.amazon.com/dp/B081SY17DC) or [N29](https://www.amazon.com/dp/B07HH4PFNQ).
 
 The "Players" controllers are model [N26](https://www.amazon.com/dp/B01NC2VS6I)
 
+## Controller Configuration
 |Controller      |Key      |Button| JS Code| Norwii Hex Code
 |:-----|:-----|:-----|:-----|:-----|
 |Host      |1      |>|49|   0x1E|
@@ -108,7 +115,8 @@ The "Players" controllers are model [N26](https://www.amazon.com/dp/B01NC2VS6I)
 |Player11      |F23      |∧ and ∨|134|  0x72 |
 |Player12      |F24      |∧ and ∨|135|  0x73 |
 
+> [!Note]
+> MacOS supports F13 - F20, Windows Supports F13-F24
+
 a [Sabrent 13 port USB hub](https://www.amazon.com/dp/product/B00HL7Z46K/) can be used to connect the controllers to a PC
 
-# Playing the Game
-Use the "s" key to view the host notes. The host notes are provided to give the host instrucitons for each screen.  
