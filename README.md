@@ -1,5 +1,5 @@
 # Quiz-Game
-A quiz game intended to played in-person.  
+A quiz game intended to be played in-person.  
 
 ### features
 - Clues stored in Google Sheets
