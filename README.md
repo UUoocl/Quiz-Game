@@ -1,4 +1,4 @@
-# Reveal-Quiz-Game
+# Quiz-Game
 A quiz game intended to played in-person.  
 
 ### features
@@ -31,20 +31,21 @@ Google forms are used to add new clues and categories.
 There are 2 versions of the input form.  One Form creates clues that can include Text, Images, Audio or Video. The other Form creates Text only clues. 
 
 ![Google Drive Folder with Quiz Game Sheet and Forms.](/readme/QuizGameDrive.excalidraw.png)
+
 Open the Forms and click the "Publish" Button
 
 Share the Form link with others to add Clues and Categories. 
    
-1. Choose the Categories for the Game.
+3. Choose the Categories for the Game.
 
 In the "Quiz Game" Sheets use the "Selected Categories" tab to choose categories    
 ![image showing the select category screen](/readme/selectCategoriesImage.png)
 
-1. Share the "Quiz Game" Sheets
+4. Share the "Quiz Game" Sheets
 
 Click the "Share" button, then set the the "General Access" to "Anyone with the link"
 
-1. Copy the Quiz Game Sheets ID
+5. Copy the Quiz Game Sheets ID
 
 In your browsers address bar copy the Sheet ID.  
 - the Sheets ID is between the */d/* and */edit*  
